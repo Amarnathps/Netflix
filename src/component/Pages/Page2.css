@@ -1,0 +1,42 @@
+.reasons {
+  padding: 60px 20px;
+  color: white;
+}
+
+.reasons h2 {
+  margin-bottom: 30px;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.reason-card {
+  background: linear-gradient(135deg, #1f2a44, #141a2b);
+  border-radius: 16px;
+  padding: 28px 24px;
+  color: white;
+  max-width: 300px;
+  min-height: 180px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.25s ease;
+}
+
+.reason-card:hover {
+  transform: scale(1.04);
+}
+
+.reason-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  color: #b3b3b3;
+  line-height: 1.5;
+}
+

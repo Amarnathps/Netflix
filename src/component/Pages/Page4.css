@@ -1,0 +1,36 @@
+.Container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Container p {
+  margin: 16px 0;
+  font-size: 1.2rem;
+}
+.content-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.content-input input {
+  padding: 16px;
+  width: 320px;
+  font-size: 16px;
+}
+
+.content-input button {
+  background: #e50914; 
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}

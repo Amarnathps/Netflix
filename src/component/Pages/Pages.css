@@ -1,0 +1,44 @@
+.trending {
+  padding: 100px;
+  color: white;
+}
+
+.trending h2 {
+  margin-bottom: 15px;
+}
+
+.trending-row {
+  display: flex;
+  gap: 140px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.trending-card {
+  position: relative;
+  min-width: 140px;
+}
+
+.trending-card img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.trending-card img:hover {
+  transform: scale(1.08);
+}
+
+.rank-number {
+  position: absolute;
+  top: 124px;
+  left: -10px;
+  font-size: 72px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 10px black;
+  z-index: 2;
+  pointer-events: none;
+}
