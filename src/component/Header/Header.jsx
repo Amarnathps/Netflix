@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -27,7 +28,7 @@ function Header() {
           </select>
         </div>
 
-        <button className="signin-btn">Sign In</button>
+        <button className="signin-btn"><Link to="/signup">Sign up</Link> |{" "}</button>
       </div>
     </header>
   );

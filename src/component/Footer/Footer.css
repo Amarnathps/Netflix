@@ -74,7 +74,7 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
