@@ -57,7 +57,13 @@
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+  
 }
+.link-btn{
+text-decoration: none;
+color:whitegi;
+}
+ 
 
 .signin-btn:hover {
   background-color: #f40612;
