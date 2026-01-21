@@ -28,7 +28,7 @@ function Header() {
           </select>
         </div>
 
-        <button className="signin-btn"><Link to="/signup">Sign up</Link> |{" "}</button>
+        <button className="signin-btn"><Link to="/signup" className='link-btn'>Sign up</Link></button>
       </div>
     </header>
   );
