@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sign-in.css";
+import { Link } from "react-router-dom";
 
 export default function Signin() {
   return (
@@ -19,7 +20,7 @@ export default function Signin() {
         <div className="signin-input">
           <input type="email" placeholder="Email or mobile number" />
           <button>
-            Continue <span>›</span>
+            <Link to="/home" className='link-btn'>Continue</Link>
           </button>
         </div>
       </div>
