@@ -7,7 +7,8 @@ import Pages from "./component/Pages/Pages";
 import Page2 from "./component/Pages/Page2";
 import Page3 from "./component/Pages/Page3";
 import Page4 from "./component/Pages/Page4";
-import Footer from "./component/Footer/Footer";
+import Footer from "./component/Footer/Footer"
+import Home from "./pages/Home/Home";
 
 import Signin from "./pages/Sign-in/Sign-in";
 
@@ -16,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* Home Page */}
+      
         <Route
           path="/"
           element={
@@ -28,16 +29,19 @@ function App() {
               <Page3 />
               <Page4 />
               <Footer />
+              {/* <Home /> */}
             </>
           }
         />
 
         {/* Signup Page */}
         <Route path="/signup" element={<Signin />} />
-
-      </Routes>
+        <Route path="/home" element={<Home />} />
+  </Routes>
     </BrowserRouter>
   );
+
+
 }
 
 export default App;
