@@ -1,31 +1,188 @@
+
+
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
   height: 68px;
-  padding: 0 50px;
+  padding: 0 60px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(0,0,0,.7), transparent);
-  z-index: 10;
+  justify-content: space-between;
+  z-index: 1000;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  transition: background-color 0.4s ease;
+}
+
+.nav-black {
+  background-color: #111;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-logo {
-  width: 92px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .nav-menu {
   display: flex;
   gap: 18px;
-  margin-left: 40px;
-  font-size: 14px;
+  list-style: none;
 }
 
-.nav-menu span {
+.nav-menu li {
+  color: #e5e5e5;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-menu li:hover {
+  color: #b3b3b3;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-kids {
+  color: white;
+  font-size: 14px;
   cursor: pointer;
 }
 
 .nav-avatar {
-  width: 32px;
-  margin-left: auto;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
 }
+.main {
+  flex: 1;
+}
+
+.hero {
+  height: 90vh;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://wallpapercave.com/wp/wp9786621.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+.hero-content {
+  padding: 140px 80px;
+  max-width: 600px;
+}
+
+.series {
+  color: red;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero h1 span {
+  color: red;
+}
+
+.part {
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.play {
+  background: red;
+  color: white;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.trailer {
+  background: #eee;
+  color: #000;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.row {
+  padding: 30px 80px;
+}
+
+.row h2 {
+  margin-bottom: 15px;
+}
+
+.posters {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.posters::-webkit-scrollbar {
+  display: none;
+}
+
+.posters img {
+  height: 240px;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.posters img:hover {
+  transform: scale(1.08);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: "Netflix Sans", Arial, sans-serif;
+}
+
+
+
