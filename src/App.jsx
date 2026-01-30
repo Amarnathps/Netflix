@@ -10,6 +10,7 @@ import Page4 from "./component/Pages/Page4";
 import Footer from "./component/Footer/Footer"
 import Home from "./pages/Home/Home";
 
+
 import Signin from "./pages/Sign-in/Sign-in";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <Page4 />
               <Footer />
               {/* <Home /> */}
+             
             </>
           }
         />
