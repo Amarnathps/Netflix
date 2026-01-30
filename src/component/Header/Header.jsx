@@ -25,6 +25,7 @@ function Header() {
           <select>
             <option>English</option>
             <option>हिन्दी</option>
+            <option>Tamil</option>
           </select>
         </div>
 
