@@ -59,8 +59,17 @@ function Pages() {
             <img src={movie.img} alt={`Movie ${movie.rank}`} />
           </div>
         ))}
+       
+
+       
+   
+   
+
       </div>
       </div>
+       
+       
+
    
   );
 }
