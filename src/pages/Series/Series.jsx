@@ -1,14 +1,19 @@
-import React, { useState } from "react";
-import "./Home.css";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import "./Series.css";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 
 
 
-function Home() {
+
+
+
+function Series() {
+
   const [show, setShow] = useState(false);
+
 
   const trendingNow = [
     "https://image.tmdb.org/t/p/w500/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
@@ -53,13 +58,8 @@ function Home() {
     "https://image.tmdb.org/t/p/original/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
 
   ];
-
-
-
   return (
-    <>
-
-
+    <div>
       <nav className={`nav ${show ? "nav-black" : ""}`}>
         <div className="nav-left">
           <img
@@ -67,13 +67,13 @@ function Home() {
             src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
             alt="Netflix"
           />
-
           <ul className="nav-menu">
-            <li>Home</li>
-            <li><Link to="/Series" className='nav-menu'>Series</Link></li>
+            <li><Link to="/Home" className='nav-menu'>Home</Link></li>
+            <li>Series</li>
             <li>History</li>
             <li>Liked</li>
             <li>My List</li>
+
 
           </ul>
           <div className='iconss'>
@@ -81,19 +81,10 @@ function Home() {
             <FontAwesomeIcon icon={faCircleUser} className='user-icon' />
 
           </div>
-        </div>
-
-        <div className="nav-right">
-          <i className="fa fa-search nav-icon"></i>
-
-          <i className="fa fa-bell nav-icon"></i>
-          <img
-            className="nav-avatar"
-
-          />
 
         </div>
       </nav>
+
 
 
       <main className="main">
@@ -117,116 +108,100 @@ function Home() {
             </div>
           </div>
         </section>
-
-
-
-
-
-
-        <section className="row">
-          <h2>Trending </h2>
-          <div className="posters">
-            {trendingNow.map((p, i) => (
-              <Link to={`/details/${i}`} key={i}>
-                <img src={p} alt="poster" className="poster" />
-              </Link>
-
-            ))}
-
-            
-
-
-
-
-
-
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Animated</h2>
-          <div className="posters">
-            {animated.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Netflix Orginals</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Trending Series</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Science Fiction</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Upcoming Movies</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Comedy</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Adventure</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>Horror</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-        <section className="row">
-          <h2>War</h2>
-          <div className="posters">
-            {Netflix.map((p, i) => (
-              <img key={i} src={p} alt="poster" />
-            ))}
-          </div>
-        </section>
-
-
-
       </main>
+
+
+
+
+      <section className="row">
+        <h2>Trending </h2>
+        <div className="posters">
+          {trendingNow.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Animated</h2>
+        <div className="posters">
+          {animated.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Netflix Orginals</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Trending Series</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Science Fiction</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Upcoming Movies</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Comedy</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Adventure</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
+      <section className="row">
+        <h2>Horror</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+      <section className="row">
+        <h2>War</h2>
+        <div className="posters">
+          {Netflix.map((p, i) => (
+            <img key={i} src={p} alt="poster" />
+          ))}
+        </div>
+      </section>
+
       <footer className="netflix-footer">
         <p className="footer-phone">
           Questions? Call <a href="tel:0008009191743">000-800-919-1743</a>
@@ -279,12 +254,8 @@ function Home() {
 
 
 
-
-
-
-
-    </>
-  );
+    </div>
+  )
 }
 
-export default Home;
+export default Series
